@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO-JESSICA</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        body 
+               {
+                background-color: #ffffff; /* Fundo branco */
+               }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icon {
+            width: 30px;
+            height: 30px;
+        }
+        .about-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <a class="logo" href="/">Studio Jessica</a>
+            <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li><a href="#Servicos">Sobre Nós</a></li>
+              <li><a href="#Nossos-serviços">Nossos Serviços</a></li>
+              <li><a href="#Depoimentos">Depoimentos</a></li>
+              <li><a href="#Contato">Contato</a></li>
+            </ul>
+       
+        
+        <div class="social-links">
+            <a href="https://wa.me/5561986321918?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20do%20Studio." target="_blank" class="whatsapp-link">
+                <img src="./img/whatsapp img.png" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/studio_jessica1/" target="_blank" class="instagram-link">
+                <img src="./img/Instagram-Icon.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </nav>
+    </header>
+    <main></main>
+  
+        <div class="container">
+            <h1 class="studio-jessica">Studio Jessica</h1>
+            <img src="./img/Jessica agendamento.jpg" alt="Foto do Studio de Beleza" class="about-img" /> 
+        <p class="R-beleza">Realce sua Beleza, Transforme seu Visual</p>
+        </div>
+    
+    <section id="Servicos">
+        <div class="container">
+            <h2 class="sobre-nos-section">Sobre Nós</h2>
+            <p class="sobre-nos-section">
+                O Studio Jessica é especializado em oferecer tratamentos personalizados que revelam a sua melhor versão. 
+                Com profissionais qualificados e produtos de alta qualidade, garantimos um atendimento impecável para cada cliente.
+            </p>
+        </div>
+    </section>
+
+    <section id="Nossos-servicos">
+        <div class="container">
+            <h2 class="servicos-heading">Nossos Servicos</h2>
+            <div class="service-item">
+                <img src="./img/imagem corte de cabelo.jpg" alt="Mulher cortando o cabelo" class="img-suave" />
+                <h3>Corte de Cabelo</h3>
+                <p>Estilos que se adaptam ao seu rosto e personalidade.</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/mulher fando coloraçao no cabelo.jpg" alt="Coloração de Cabelo" class="img-suave" />
+                <h3>Coloração</h3>
+                <p>Transforme seu visual com cores vibrantes e duradouras.</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/mulher se maquiando.jpg" alt="Maquiagem" class="img-suave" />
+                <h3>Maquiagem Profissional</h3>
+                <p>Perfeita para qualquer ocasião especial.</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/mulher fazendo a unha.jpg" alt="Manicure e Pedicure" class="img-suave" />
+                <h3>Manicure e Pedicure</h3>
+                <p>Cuidado e estilo para suas mãos e pés.</p>
+            </div>
+        </div>
+    </section>
+
+   
+        <div class="container">
+            <h2 class="servicos-heading">Conheça nosso Estúdio</h2>
+            <p class="assistir-video">Assista ao vídeo e veja o ambiente e os serviços que oferecemos.</p>
+            <video class="video-salao" width="100%" controls>
+                <source src="./img/video completo Jessica  novo.mp4" type="video/mp4" />
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+        </div>
+         <!-- Testimonials Section -->
+    <section id="depoimentos">
+        <div class="container">
+          <h2 class="testimonials">O que nossos clientes dizem</h2>
+          <div >
+            <p class="paragrafo-testimonial">
+              "O atendimento é maravilhoso e os resultados sempre me deixam mais
+              que satisfeita!"
+            </p>
+            <h4 class="testimonials">- Ana Silva</h4>
+          </div>
+          <div >
+            <p class="paragrafo-testimonial">
+              "Não troco esse lugar por nada. Me sinto renovada a cada visita!"
+            </p>
+            <h4 class="testimonials">- Maria Oliveira</h4>
+          </div>
+        </div>
+      </section>
+   
+    <!-- Contact Section -->
+<section class="contact" id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Agende seu horário conosco. Estamos prontos para atender você!</p>
+      <form>
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 Studio de Beleza. Todos os direitos reservados.</p>
+  </footer>
+  
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5561986321918?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20do%20Studio." target="_blank" class="whatsapp-float">
+    <img src="./img/whatsapp img.png" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+  
+
+  <script src="mobile-navbar.js" defer></script>
+</body>
+</html>
+</html>

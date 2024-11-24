@@ -1,0 +1,444 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+  }
+  
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.studio-jessica {
+    background-color: rgba(255, 182, 193, 0.5); 
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-size: 40px;
+    margin-top: 58px;
+
+  }
+  .video-salao {
+    width: 100% ;
+    height: auto;
+    border-radius: 8px;
+
+  }
+
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 20vh;
+  }
+  
+  main {
+    
+    background-size: cover;
+    height: 9vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+ 
+    .nav-list {
+      position: absolute;
+      top:10vh;
+      right: 0;
+      width: 100vw;
+      height: 21vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 29px;
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+      z-index: 1;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+ 
+    margin-top: 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.service-card {
+    background: #ff4d88;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+footer {
+   
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+
+.contact {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.2em;
+    color: #ff4d88;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    margin-left: -12px;
+  }
+  
+  .contact form button {
+    background: #ff99cc;
+    color: #696969;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 42px;
+    margin-left: 36px;
+  }
+
+.contact button {
+    background-color: #ff4d88;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background: #ff66b2;
+}
+
+
+.footer {
+    
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 1.8em;
+    }
+
+    .contact p {
+        font-size: 1em;
+    }
+
+    .whatsapp-float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+
+.servicos-heading {
+  text-align: center; /* Exemplo de estilo */
+  color: #333; /* Ajuste de cor */
+  font-size: 1.5em;
+}
+.sobre-nos-section {
+  text-align: center; /* Centraliza o texto dentro da seção */
+  margin: 0 auto; /* Ajusta a margem para centralização do bloco */
+}
+
+.sobre-nos-section h2,
+.sobre-nos-section p {
+  margin-bottom: 15px; /* Ajusta o espaçamento entre os elementos */
+}
+
+  
+
+
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+
+  .service-item {
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+
+  .service-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+  }
+  
+
+  .service-item h3 {
+    font-size: 1.5em; 
+    margin-top: 10px;
+  }
+  
+
+  .service-item p {
+    font-size: 16px; 
+    line-height: 1.5;
+  }
+  p {
+    background-color:#f8b5ba; /* Cor suave de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+/* Espaçamento global para elementos de título e parágrafos */
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+}
+
+
+
+
+.sobre-nos-section h2, .sobre-nos-section p {
+  margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+.R-beleza {
+  margin-top: 20px;
+  text-align: center;
+}
+.assistir-video {
+  text-align: center;
+}
+ /* Estilos para o container pai do formulário */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px; /* Ajuste conforme necessário */
+}
+
+/* Estilos para o formulário */
+.contact form {
+  width: 100%; /* Ajusta o formulário para ocupar toda a largura disponível */
+  max-width: 400px; /* Define uma largura máxima para manter a aparência */
+  margin: 0 auto; /* Centraliza o formulário */
+  box-sizing: border-box; /* Inclui padding e borda na largura */
+}
+
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+  .contact form {
+      padding: 0 10px; /* Adiciona um padding lateral para telas pequenas */
+  }
+}
+.testimonials {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.paragrafo-testimonial {
+  text-align: center;
+  font-size: 16px;
+
+}
+p {
+  font-family: 'Poppins', sans-serif; /* Substitua 'Nome da Fonte' pela fonte desejada */
+  font-size: 16px; /* Ajuste o tamanho conforme necessário */
+  line-height: 1.5; /* Para melhorar a legibilidade */
+  color: #333; /* Substitua pela cor desejada */
+}
+
+.img-suave {
+  opacity: 0.9; /* Ajuste conforme necessário */
+  transition: opacity 0.3s ease-in-out; /* Para um efeito de transição */
+}
+
+.img-suave:hover {
+  opacity: 1; /* Deixa a imagem totalmente visível ao passar o mouse */
+}
+
