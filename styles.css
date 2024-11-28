@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin-bottom: 20px; /* Ajuste o valor conforme necessário */
 }
 .studio-jessica {
-    background-color: rgba(255, 182, 193, 0.5); 
+    background-color: #f8b5ba;
     padding: 20px;
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
@@ -53,6 +53,7 @@ a {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #ffffff;
   }
   
   nav {
